@@ -17,11 +17,7 @@ A collection of my personal Windows 11 customisations — focused on a clean, ae
 
 |Category| Tool|
 |--------|------|
-<<<<<<< HEAD
 |Status Bar| [YASB](YASB/README.md)|
-=======
-|Status Bar| YASB|
->>>>>>> 5f700dc820d832c502c8f528e42586e2ce85a44c
 |App Launcher| Flow Launcher|
 |Taskbar| Windhawk|
 |Terminal| Windows Terminal|
