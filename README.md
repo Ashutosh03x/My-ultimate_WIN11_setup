@@ -41,15 +41,6 @@ General Steps:
 5. Restart the application
 
 ---
-
-📁 Structure
-
-YASB/
-Flow-Launcher/
-Windhawk/
-Terminal/
-VSCode/
-
 ---
 
 ⚠️ Notes
