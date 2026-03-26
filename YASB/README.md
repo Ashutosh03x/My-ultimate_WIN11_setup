@@ -5,20 +5,25 @@ A highly customizable Windows status bar built with Python.
 ---
 👁️Preview
 ---
-
+- __Bar__
 <p align="center">
 <img src="images/yasb_bar.png" width="800"/>
 </p>
+
+- __wallpapers widget__
 <p align="center">
 <img src="images/wallpapers_widget.png" width="800"/>
 </p>
+
+- __Calender widget__
 <p align="center">
 <img src="images/calender_widget.png" width="800"/>
 </p>
+
+- __PowerMenu widget__
 <p align="center">
 <img src="images/power-menu_widget.png" width="800"/>
 </p>
-
 
 
 ---
