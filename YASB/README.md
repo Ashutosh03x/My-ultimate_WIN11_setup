@@ -25,7 +25,7 @@ Make sure to:
 
 ⚙️ Installation
 
-1. Install YASB
+1. Install YASB 
 2. Copy the files from this folder
 3. Replace your existing YASB config files
 4. Restart YASB

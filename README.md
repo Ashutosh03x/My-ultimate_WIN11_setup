@@ -12,12 +12,13 @@ A collection of my personal Windows 11 customisations — focused on a clean, ae
 
 📦 Apps & Tools Used
 
-Category| Tool
-Status Bar| YASB
-App Launcher| Flow Launcher
-Taskbar Customisation| Windhawk
-Terminal| Windows Terminal
-Code Editor| VS Code
+|Category| Tool|
+|--------|------|
+|Status Bar| YASB|
+|App Launcher| Flow Launcher|
+|Taskbar| Windhawk|
+|Terminal| Windows Terminal|
+|Code Editor| VS Code|
 
 ---
 
@@ -32,7 +33,7 @@ Code Editor| VS Code
 
 Each folder in this repository contains configuration files for a specific tool.
 
-General Steps:
+»General Steps:
 
 1. Install the required application
 2. Open its config/settings
@@ -72,5 +73,4 @@ Inspired by the Windows customization community.
 📌 Extras (Coming Soon)
 
 - Screenshots
-- Setup videos
 - More tools and tweaks
