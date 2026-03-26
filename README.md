@@ -6,7 +6,10 @@ A collection of my personal Windows 11 customisations — focused on a clean, ae
 
 🖼️ Preview
 
-(Screenshots will be added soon)
+-YASB
+<p align="center">
+<img src="YASB/images/yasb_bar.png" width="800"/>
+</p>
 
 ---
 
@@ -14,7 +17,7 @@ A collection of my personal Windows 11 customisations — focused on a clean, ae
 
 |Category| Tool|
 |--------|------|
-|Status Bar| YASB|
+|Status Bar| [YASB](YASB/README.md)|
 |App Launcher| Flow Launcher|
 |Taskbar| Windhawk|
 |Terminal| Windows Terminal|

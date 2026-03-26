@@ -3,9 +3,28 @@
 A highly customizable Windows status bar built with Python.
 
 ---
+👁️Preview
+---
+
+<p align="center">
+<img src="images/yasb_bar.png" width="800"/>
+</p>
+<p align="center">
+<img src="images/wallpapers_widget.png" width="800"/>
+</p>
+<p align="center">
+<img src="images/calender_widget.png" width="800"/>
+</p>
+<p align="center">
+<img src="images/power-menu_widget.png" width="800"/>
+</p>
+
+
+
+---
 
 ⚠️ Note
-
+---
 «Some parts of this config may not work directly on your system.
 Make sure to:
 
@@ -25,8 +44,8 @@ Make sure to:
 
 ⚙️ Installation
 
-1. Install YASB 
-2. Copy the files from this folder
+1. Install [YASB](https://github.com/amnweb/yasb) 
+2. Copy the files (.css and .config) from it's folder
 3. Replace your existing YASB config files
 4. Restart YASB
 
