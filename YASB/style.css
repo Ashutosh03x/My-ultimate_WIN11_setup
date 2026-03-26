@@ -1,0 +1,468 @@
+* {
+	font-size: 10px;
+	color: #cdd6f4;
+	font-weight: 500;
+	font-family: "JetBrainsMono NFP";
+	margin: 0;
+	padding: 0;
+}
+.yasb-bar {
+	padding: 0 2px;
+	margin: 0;
+    background-color: rgba(28,28,38,0.85); 
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(203,166,247,0.2);
+    box-shadow: 0 0 12px rgba(203,166,247,0.12);
+}
+.widget {
+	padding: 0 10px;
+	margin: 0;
+}
+.widget .label {
+	padding: 2px 2px 1px 2px;
+}
+.widget .label.alt {
+	padding: 1px 8px 1px 8px;
+}
+.clock-widget .label {
+    padding-left:8px;
+}
+/*POWER MENU WIDGET*/
+/* Uptime text */
+.uptime {
+	font-size: 14px;
+	margin-bottom: 10px;
+	color: rgba(191, 202, 219, 0.726);
+	font-weight: 600;
+	font-family: "JetBrainsMono NFP";
+}
+.power-menu-widget .label {
+	color: #a0c1eb;
+	font-size: 24px;
+}
+.power-menu-popup{
+    background-color: rgba(24, 24, 37, 0.55);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+    border-radius: 14px;
+    padding: 20px;
+    border: 1px solid rgba(203,166,247,0.35);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.45),
+    0 0 20px rgba(203,166,247,0.15);
+    opacity: 0;
+    transform: translateY(-20px) scale(0.96);
+    transition: all 0.25 ease;
+}
+.power-menu-popup.show{
+    opacity: 0;
+    transform: translateY(-20px) scale(0.96);
+    transition: all 0.25 ease;
+}
+.uptime{
+    font-size: 14px;
+    margin-bottom: 14px;
+    color: #bac2de;
+    font-weight: 600;
+}
+.power-menu-popup .button {
+	padding: 0;
+	width: 120px;
+	height: 135px;
+	border-radius: 14px;
+	background-color: rgba(30, 30, 46, 0.55);
+	font-family: "JetBrainsMono NFP";
+	border: 1px solid rgba(203, 166, 247, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease
+}
+.power-menu-popup .button:hover {
+	background-color: rgb(203, 166, 247,0.25);
+	border: 1px solid rgb(203, 166, 247,0.35);
+    box-shadow: 0 0 10px rgba(023,166,247,0.25);
+    transform: translateY(-4px);
+}
+.power-menu-popup .button:hover .icon{
+    transform: scale(1.12);
+    transition: transform 0.15s ease;
+}
+.power-menu-popup .button .label {
+	margin-top: 6px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #bac2de;
+	font-family: "JetBrainsMono NFP";
+}
+.power-menu-popup .button.lock .icon{
+    color:#89b4fa
+}
+.power-menu-popup .button.signout .icon{
+    color: #f9e2af
+}
+.power-menu-popup .button.sleep .icon{
+    color: #94e2d5
+}
+.power-menu-popup .button.restart .icon{
+    color: #a6e3a1
+}
+.power-menu-popup .button.shutdown .icon{
+    color: #f38ba8
+}
+.power-menu-popup .button .icon {
+	font-size: 48px;
+	padding-top: 0px;
+    margin-bottom: 6px;
+	color: #a6adc8
+}
+.power-menu-popup .button.cancel {
+    height: 34px !important; /* Much thinner than the 240px of other buttons */
+    width: 100%; /* Full width to span across */
+    margin-top: 8px;
+    border-radius: 8px;
+    background-color: rgba(243,139,168,0.08);
+
+}
+.power-menu-popup .button.cancel .icon {
+    font-size: 18px !important; /* Smaller icon for the thinner button */
+    padding-top: 4px !important; /* Remove the large top padding */
+    color: #f38ba8
+}
+
+.power-menu-popup .button.cancel .label {
+    margin-bottom: 0px !important; /* Remove bottom margin */
+    color: #f38ba8
+}
+.power-menu-popup .button:hover {
+    background: rgba(203,166,247,0.12);
+    border: 1px solid rgba(203, 166, 247, 0.4);
+    box-shadow: 0 0 14px rgba(203,166,247,0.25)
+}
+/* ICONS */
+.icon {
+	font-size: 16px;
+}
+.volume-widget .icon {
+	color: #89b4fa;
+	margin: 1px 2px 0 0;
+} 
+.start-menu .icon {
+    font-size: 18px;
+	color: #89b4fa
+}
+.clock-widget .icon {
+	color: #cba6f7;
+    font-size: 14px;
+}
+.wallpapers-widget .icon {
+    color: #89dceb;
+    font-size: 22px;
+}
+/* CALENDAR WIDGET */
+.calendar {
+    background-color: rgba(17, 17, 27, 0.45);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 14px;
+    border: 1px solid rgba(203,166,247,0.35);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.45),
+    0 0 18px rgba(203,266,247,0.18);
+}
+.calendar .calendar-table,
+.calendar .calendar-table::item {
+    background-color: rgba(17, 17, 27, 0);
+    color: rgba(162, 177, 196, 0.85);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;  
+}
+.calendar .calendar-table::item:selected {
+    color: rgb(255, 255, 255);
+    background-color: rgba(203,166,247,0.8);
+    border-radius: 10px;
+}
+.calendar .day-label {
+    margin-top: 20px;
+}
+.calendar .day-label,
+.calendar .month-label,
+.calendar .date-label{
+    font-size: 72px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+.calendar .week-label,
+.calendar .holiday-label {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    min-width: 180px;
+    max-width: 180px;
+}
+.calendar .week-label,
+.calendar .holiday-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(162, 177, 196, 0.85);
+}
+.calendar .holiday-label {
+    color: rgba(162, 177, 196, 0.85);
+    font-weight: 700;
+}
+.calendar .month-label {
+    font-weight: normal;
+}
+.calendar .date-label {
+    font-size: 88px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-top: -20px;
+}
+.calendar .calendar-table::item:hover{
+    background-color: rgba(203,166,247,0.15);
+    border-radius: 8px;
+}
+.battery-widget {
+    padding: 0 1px;
+}
+.battery-widget .label {
+    font-size: 9.5px;
+    color: #97a8e2;
+}
+.battery-widget .icon {
+    font-size: 18px;
+    margin-right: 6px;
+}
+/* Critical - red */
+.battery-widget .icon.status-critical {
+    color: #f384a4;
+}
+.battery-widget .label.status-critical {
+    color: #eba0ac;
+}
+/* Low - orange */
+.battery-widget .icon.status-low {
+    color: #fab387;
+}
+.battery-widget .label.status-low {
+    color: #f9b38d;
+}
+/* Medium - yellow */
+.battery-widget .icon.status-medium {
+    color: #f9e2af;
+}
+/* High - light green */
+.battery-widget .icon.status-high {
+    color: #7caaef;
+}
+/* Full - green */
+.battery-widget .icon.status-full {
+    color: #80e0b5;
+	text-shadow: 0 0 6px rgba(162, 190, 236, 0.35);
+}
+/* Charging - cyan */
+.battery-widget .icon.status-charging {
+    color: #4fb2df;
+}
+.battery-widget .label.status-charging {
+    color: #89b4fa;
+}
+.apps-widget .label {
+    font-size: 15px;
+    padding: 0 6px;
+	color: #a6adc8;
+	transition: all 0.2s ease;
+}
+.apps-widget .label:hover{
+   color:#cba6f7;
+   text-shadow: 0 0 8px rgba(203,166,247,0.35);	
+}
+.start-menu .label {
+    font-size: 22px;   /* change this */
+    color: #89b4fa;
+    padding: 0 6px;
+    line-height: 1;
+}
+.cava-widget {
+    padding: 0;
+    margin: 0;
+}
+
+.calendar {
+    background-color: #1e1e2e;
+}
+.calendar .calendar-table,
+.calendar .calendar-table::item {
+    background-color: rgba(17, 17, 27, 0);
+    color: rgba(162, 177, 196, 0.85);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;  
+}
+.calendar .calendar-table::item:selected {
+    color: rgb(255, 255, 255);
+    background-color: #7c95ea;
+    border-radius: 10px;
+}
+.calendar .day-label {
+    margin-top: 20px;
+}
+.calendar .day-label,
+.calendar .month-label,
+.calendar .date-label,
+.calendar .week-label,
+.calendar .holiday-label {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    color: #6699ec;
+    font-weight: 700;
+    min-width: 180px;
+    max-width: 180px;
+}
+.calendar .week-label,
+.calendar .holiday-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(162, 177, 196, 0.85);
+}
+.calendar .holiday-label {
+    color: rgba(162, 177, 196, 0.85);
+    font-weight: 700;
+}
+.calendar .month-label {
+    font-weight: normal;
+    color:#6699ec
+}
+.calendar .date-label {
+    font-size: 80px;
+    font-weight: 900;
+    color: rgb(174, 144, 249);
+    margin-top: -20px;
+}
+
+/* WALLPAPER WIDGET ICON */
+
+.wallpapers-widget {
+    padding: 0 5px;
+}
+
+.wallpapers-widget .icon {
+    font-size: 20px;
+    color: #89b4fa;            /* Catppuccin blue */
+    transition: all 0.18s ease;
+}
+
+/* hover effect */
+
+.wallpapers-widget .icon:hover {
+    color: #cba6f7;            /* Catppuccin mauve */
+    text-shadow: 0 0 8px rgba(203,166,247,0.35);
+    transform: scale(1.08);
+}
+
+/* ---------- POPUP WINDOW ---------- */
+
+.wallpapers-gallery-window {
+    background: rgba(30,30,46,0.75);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+
+    border-radius: 16px;
+    border: 1px solid rgba(199, 155, 252, 0.25);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.45),
+        0 0 16px rgba(203,166,247,0.15);
+
+    margin: 3px;
+    padding: 1px;
+}
+
+
+/* ---------- IMAGE BORDER ---------- */
+
+.wallpapers-gallery-image {
+    border: 2px solid rgba(115, 119, 197, 0.85);
+    border-radius: 14px;
+    transition: all 0.18s ease;
+}
+
+
+/* IMAGE HOVER */
+
+.wallpapers-gallery-image:hover {
+    border: 2px solid #cba6f7;
+    transform: scale(1.03);
+}
+
+
+/* SELECTED WALLPAPER */
+
+.wallpapers-gallery-image.focused {
+    border: 2px solid #89b4fa;
+    box-shadow: 0 0 12px rgba(137,180,250,0.35);
+}
+
+
+/* ---------- NAVIGATION BUTTONS ---------- */
+
+.wallpapers-gallery-buttons {
+
+    background: rgba(76, 106, 149, 0.7);
+    color: #cdd6f4;
+
+    border: 1px solid rgba(203,166,247,0.35);
+    border-radius: 10px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    padding: 10px 0;
+    margin: 12px;
+
+    width: 500px;
+
+    transition: all 0.18s ease;
+}
+
+
+/* BUTTON HOVER */
+
+.wallpapers-gallery-buttons:hover {
+
+    background: rgba(203,166,247,0.15);
+    border: 1px solid #cba6f7;
+
+    color: #cba6f7;
+
+    box-shadow: 0 0 10px rgba(203,166,247,0.30);
+
+    transform: translateY(-2px);
+}
+
+
+/* BUTTON PRESS */
+
+.wallpapers-gallery-buttons:pressed {
+    background: rgba(203,166,247,0.30);
+}
+
+.wallpapers-gallery-window{
+    overflow: visible;
+}
+.wallpapers-gallery-image{
+    display: block;
+}
+.wallpapers-widget .widget-container{
+    overflow:visible;
+}
+
+/* THERE'S A LOT OF LINES OF CODE WHICH TO NOT WORK WITH YASB , PLEASE IGNORE THAT:)

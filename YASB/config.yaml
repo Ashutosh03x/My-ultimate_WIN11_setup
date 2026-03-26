@@ -1,0 +1,222 @@
+watch_stylesheet: true
+watch_config: true
+debug: false
+update_check: true # Enable automatic update check.
+bars:
+  primary-bar:
+    enabled: true
+    screens: ["primary"]
+    class_name: "yasb-bar"
+
+    alignment:
+      position: "top"
+      center: false
+
+    animation:
+      enabled: true
+      duration: 1000
+
+    blur_effect:
+      enabled: true
+      acrylic: true
+      dark_mode: true
+      round_corners: true
+      round_corners_type: "normal"
+      border_color: "#8dbcff"
+
+    window_flags:
+      always_on_top: true
+      windows_app_bar: true
+
+    dimensions:
+      width: "100%"
+      height: 26
+
+    padding:
+      top: 3
+      left: 3
+      bottom: 0
+      right: 3
+
+    widgets:
+      left:
+        - "custom_button"
+        - "wallpapers"
+        - "active_window"
+
+      center:
+        - "clock"
+        
+      right:
+        - "cava"
+        - "volume"
+        - "battery"
+        - "cpu"
+        - "power_menu"
+
+widgets:
+  active_window:
+    type: "yasb.active_window.ActiveWindowWidget"
+    options:
+      label: "{win[app_name]}"
+      label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]} {win[app_name]}]"
+      label_no_window: ""
+      label_icon: true
+      label_icon_size: 14
+      max_length: 30
+      max_length_ellipsis: "..."
+      monitor_exclusive: true
+
+  clock:
+    type: "yasb.clock.ClockWidget"
+    options:
+      label: "{%I:%M:%S}"
+      label_alt: "{%I:%M:%S}"
+      timezones: []
+      callbacks:
+        on_left: "toggle_calendar"
+
+  power_menu:
+    type: "yasb.power_menu.PowerMenuWidget"
+    options:
+      label: "󰄛"
+      uptime: True
+      blur: True
+      blur_background: True
+      animation_duration: 200
+      button_row: 5
+      buttons:
+        shutdown: ["\uf011", "Khel Khatam"]
+        restart: ["\uead2", "ek aur baar"]
+        signout: ["\udb80\udf43", "Dip out"]
+        lock: ["󰌾", "lock"]
+        sleep: ["\u23fe", "NiNi"]
+        cancel: ["", "Nah!Im Good"]
+
+  volume:
+    type: "yasb.volume.VolumeWidget"
+    options:
+      label: "<span>{icon}</span> {level}"
+      label_alt: "{volume}"
+      volume_icons:
+        - "\ueee8"
+        - "\uf026"
+        - "\uf027"
+        - "\uf027"
+        - "\uf028"
+      callbacks:
+        on_right: "exec cmd.exe /c start ms-settings:sound"
+
+  custom_button:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "󰣇"
+      label_alt: "󰣇"
+      class_name: "start-menu"
+      callbacks:
+        on_left: "exec start_menu"
+
+  battery:
+    type: "yasb.battery.BatteryWidget"
+    options:
+      label: "<span>{icon}</span> {percent}%"
+      label_alt: "<span>{icon}</span> {percent}% | {power}W | {time_remaining}"
+      update_interval: 5000
+      time_remaining_natural: False
+      hide_unsupported: True
+
+      charging_options:
+        icon_format: "{charging_icon}"
+        blink_charging_icon: true
+        blink_interval: 500
+
+      status_thresholds:
+        critical: 15
+        low: 35
+        medium: 70
+        high: 90
+        full: 100
+
+      status_icons:
+        icon_charging: "󱥸"
+        icon_critical: "󰪞"
+        icon_low: "󰪟"
+        icon_medium: "󰪣"
+        icon_high: "󰪤"
+        icon_full: "󰪥"
+
+      label_shadow:
+        enabled: true
+        color: "black"
+        radius: 3
+        offset: [1, 1]
+
+  apps:
+    type: "yasb.applications.ApplicationsWidget"
+    options:
+      label: "{data}"
+      app_list:
+        - { icon: "", launch: "cmd /c Taskmgr" }
+
+  apps0:
+    type: "yasb.applications.ApplicationsWidget"
+    options:
+      label: "{data}"
+      app_list:
+        - { icon: "\uf489", launch: "wt" }
+  cava:
+    type: "yasb.cava.CavaWidget"
+    options:
+      bar_height: 12
+      min_bar_height: 0
+      gradient: 1
+      foreground: "#89b4fa"
+      gradient_color_1: '#74c7ec'
+      gradient_color_2: '#89b4fa'
+      gradient_color_3: '#cba6f7'
+      bars_number: 12
+      bar_spacing: 2
+      bar_width: 3
+      bar_type: "bars"
+      framerate: 120
+      hide_empty: true
+  cpu:
+        type: "yasb.cpu.CpuWidget"
+        options:
+          label: "{info[percent][total]:.0f}%"
+          progress_bar:
+            enabled: true
+            position: "left"
+            size: 16
+            thickness: 3
+            color: "#89dceb"
+            background_color: "#1e1e2e"
+            animation: true 
+          animation:
+            enabled: true
+            type: FadeInOut
+            duration: 200
+          update_interval: 2000
+          callbacks:
+            on_right: "do_nothing"
+            on_left: "do_nothing"
+  wallpapers:
+      type: "yasb.wallpapers.WallpapersWidget"
+      options:
+        label: "<span>\udb83\ude09</span>"
+        image_path:  #use your own path of the wallpapers
+        change_automatically: False # Automatically change wallpaper
+        update_interval: 120 # If change_automatically is true, update interval in seconds
+        gallery:
+            enabled: true
+            blur: true
+            image_width: 220
+            image_per_page: 8
+            show_buttons: true
+            orientation: "portrait"
+            image_spacing: 12
+            lazy_load: true
+            lazy_load_delay: 80
+            lazy_load_fadein: 400
+            image_corner_radius: 16
+            enable_cache: true            
