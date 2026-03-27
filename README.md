@@ -6,15 +6,21 @@ A collection of my personal Windows 11 customisations — focused on a clean, ae
 
 🖼️ Preview
 
--YASB
+- YASB
+
 <p align="center">
 <img src="YASB/images/yasb_bar.png" width="800"/>
+</p>
+
+- Flow Launcher
+<p align="center">
+<img src="./Flow Launcher/Images/Search_box.png" width="800"/>
 </p>
 
 ---
 
 📦 Apps & Tools Used
-
+--
 |Category| Tool|
 |--------|------|
 |Status Bar| [YASB](YASB/README.md)|
@@ -27,8 +33,8 @@ A collection of my personal Windows 11 customisations — focused on a clean, ae
 
 🎨 Theme
 
-- Colorscheme: Catppuccin (Mocha)
-- Font: JetBrains Mono Nerd Font
+- Colorscheme: [Catppuccin (Mocha)](https://catppuccin.com/)
+- Font: [JetBrains Mono Nerd Font](https://www.jetbrains.com/lp/mono/)
 
 ---
 
