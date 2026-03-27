@@ -32,7 +32,7 @@ Customize Windows programs with advanced mod configurations.
 ⚠️ Note
 ---
 «If you're using my taskbar config, it may remove the Start menu and network icon.  
-To add them back, follow the steps below.»
+To add them back, [follow this](https://github.com/ramensoftware/windows-11-taskbar-styling-guide) .»
 
 ---
 
