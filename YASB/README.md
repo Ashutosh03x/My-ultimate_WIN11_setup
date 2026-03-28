@@ -17,12 +17,17 @@ A highly customizable Windows status bar built with Python.
 
 - __Calender widget__
 <p align="center">
-<img src="images/calender_widget.png" width="800"/>
+<img src="images/calender_widget_enhanced.png" width="800"/>
 </p>
 
 - __PowerMenu widget__
 <p align="center">
 <img src="images/power-menu_widget.png" width="800"/>
+</p>
+
+- __CPU Widget-POPUP__
+<p align="center">
+<img src="images/cpu_widget_popup.png" width="800"/>
 </p>
 
 
