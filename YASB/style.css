@@ -161,73 +161,6 @@
     color: #89dceb;
     font-size: 22px;
 }
-/* CALENDAR WIDGET */
-.calendar {
-    background-color: rgba(17, 17, 27, 0.45);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 14px;
-    border: 1px solid rgba(203,166,247,0.35);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.45),
-    0 0 18px rgba(203,266,247,0.18);
-}
-.calendar .calendar-table,
-.calendar .calendar-table::item {
-    background-color: rgba(17, 17, 27, 0);
-    color: rgba(162, 177, 196, 0.85);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;  
-}
-.calendar .calendar-table::item:selected {
-    color: rgb(255, 255, 255);
-    background-color: rgba(203,166,247,0.8);
-    border-radius: 10px;
-}
-.calendar .day-label {
-    margin-top: 20px;
-}
-.calendar .day-label,
-.calendar .month-label,
-.calendar .date-label{
-    font-size: 72px;
-    font-weight: 900;
-    margin-top: 10px;
-}
-.calendar .week-label,
-.calendar .holiday-label {
-    font-family: 'Segoe UI';
-    font-size: 16px;
-    color: #fff;
-    font-weight: 700;
-    min-width: 180px;
-    max-width: 180px;
-}
-.calendar .week-label,
-.calendar .holiday-label {
-    font-size: 12px;
-    font-weight: 600;
-    color: rgba(162, 177, 196, 0.85);
-}
-.calendar .holiday-label {
-    color: rgba(162, 177, 196, 0.85);
-    font-weight: 700;
-}
-.calendar .month-label {
-    font-weight: normal;
-}
-.calendar .date-label {
-    font-size: 88px;
-    font-weight: 900;
-    color: rgb(255, 255, 255);
-    margin-top: -20px;
-}
-.calendar .calendar-table::item:hover{
-    background-color: rgba(203,166,247,0.15);
-    border-radius: 8px;
-}
 .battery-widget {
     padding: 0 1px;
 }
@@ -292,60 +225,6 @@
 .cava-widget {
     padding: 0;
     margin: 0;
-}
-
-.calendar {
-    background-color: #1e1e2e;
-}
-.calendar .calendar-table,
-.calendar .calendar-table::item {
-    background-color: rgba(17, 17, 27, 0);
-    color: rgba(162, 177, 196, 0.85);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;  
-}
-.calendar .calendar-table::item:selected {
-    color: rgb(255, 255, 255);
-    background-color: #7c95ea;
-    border-radius: 10px;
-}
-.calendar .day-label {
-    margin-top: 20px;
-}
-.calendar .day-label,
-.calendar .month-label,
-.calendar .date-label,
-.calendar .week-label,
-.calendar .holiday-label {
-    font-family: 'Segoe UI';
-    font-size: 16px;
-    color: #6699ec;
-    font-weight: 700;
-    min-width: 180px;
-    max-width: 180px;
-}
-.calendar .week-label,
-.calendar .holiday-label {
-    font-size: 12px;
-    font-weight: 600;
-    color: rgba(162, 177, 196, 0.85);
-}
-.calendar .holiday-label {
-    color: rgba(162, 177, 196, 0.85);
-    font-weight: 700;
-}
-.calendar .month-label {
-    font-weight: normal;
-    color:#6699ec
-}
-.calendar .date-label {
-    font-size: 80px;
-    font-weight: 900;
-    color: rgb(174, 144, 249);
-    margin-top: -20px;
 }
 
 /* WALLPAPER WIDGET ICON */
@@ -464,5 +343,311 @@
 .wallpapers-widget .widget-container{
     overflow:visible;
 }
+/* =========================
+   CPU POPUP (GLASS / MOCHA)
+========================= */
 
-/* THERE'S A LOT OF LINES OF CODE WHICH TO NOT WORK WITH YASB , PLEASE IGNORE THAT:)
+.cpu-popup {
+    background: rgba(30, 30, 46, 0.55);
+    backdrop-filter: blur(26px);
+    -webkit-backdrop-filter: blur(26px);
+
+    min-width: 400px;
+    border-radius: 16px;
+
+    border: 1px solid rgba(203,166,247,0.25);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.6),
+        0 0 20px rgba(203,166,247,0.12);
+
+    padding-bottom: 6px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.cpu-popup .header {
+    background: transparent;
+    padding: 14px 18px;
+}
+
+.cpu-popup .header .text {
+    font-size: 15px;
+    font-family: "JetBrainsMono NFP";
+    color: #cdd6f4;
+    font-weight: 600;
+}
+
+.cpu-popup .header .pin-btn {
+    font-size: 13px;
+    background: transparent;
+    border: none;
+
+    padding: 6px;
+    border-radius: 8px;
+
+    color: rgba(166,173,200,0.6);
+    transition: all 0.2s ease;
+}
+
+.cpu-popup .header .pin-btn:hover {
+    color: #cba6f7;
+    background: rgba(203,166,247,0.12);
+}
+
+.cpu-popup .header .pin-btn.pinned {
+    color: #cba6f7;
+}
+
+
+/* =========================
+   GRAPH
+========================= */
+
+.cpu-popup .graph-container {
+    background: transparent;
+    min-height: 70px;
+    padding: 4px 10px;
+}
+
+.cpu-popup .cpu-graph {
+    color: #89b4fa; /* blue accent */
+}
+
+.cpu-popup .cpu-graph-grid {
+    color: rgba(166,173,200,0.08);
+}
+
+.cpu-popup .graph-title {
+    font-size: 11px;
+    color: rgba(166,173,200,0.6);
+    font-family: "JetBrainsMono NFP";
+    padding: 2px 0px 6px 14px;
+}
+
+
+/* =========================
+   STATS GRID
+========================= */
+
+.cpu-popup .stats {
+    background: transparent;
+    padding: 14px;
+}
+
+.cpu-popup .stats .stat-item {
+    background: rgba(49, 50, 68, 0.55);
+
+    border: 1px solid rgba(203,166,247,0.15);
+    border-radius: 12px;
+
+    padding: 10px 14px;
+    margin: 6px;
+
+    transition: all 0.18s ease;
+}
+
+.cpu-popup .stats .stat-item:hover {
+    background: rgba(203,166,247,0.12);
+    border: 1px solid rgba(203,166,247,0.35);
+
+    transform: translateY(-2px);
+}
+
+
+/* LABEL */
+.cpu-popup .stats .stat-label {
+    font-size: 12px;
+    color: rgba(166,173,200,0.7);
+    font-family: "JetBrainsMono NFP";
+    font-weight: 500;
+
+    padding: 2px 2px 0px 2px;
+}
+
+
+/* VALUE */
+.cpu-popup .stats .stat-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #cdd6f4;
+
+    font-family: "JetBrainsMono NFP";
+    padding: 2px 2px 6px 2px;
+}
+
+
+/* =========================
+   CPU WIDGET (BAR)
+========================= */
+
+.cpu-widget {
+    padding: 0 8px;
+}
+
+.cpu-widget .widget-container .label {
+    font-size: 12px;
+    color: #cdd6f4;
+}
+
+.cpu-widget .widget-container .icon {
+    font-size: 14px;
+    color: #89b4fa;
+}
+
+
+/* STATUS COLORS (SOFT MOCHA) */
+.cpu-widget .widget-container .label.status-low {
+    color: #a6e3a1;
+}
+
+.cpu-widget .widget-container .label.status-medium {
+    color: #f9e2af;
+}
+
+.cpu-widget .widget-container .label.status-high {
+    color: #fab387;
+}
+
+.cpu-widget .widget-container .label.status-critical {
+    color: #f38ba8;
+}
+
+
+/* =========================
+   PROGRESS CIRCLE
+========================= */
+
+.cpu-widget .progress-circle {
+    margin-right: 6px;
+}
+
+
+/* =========================
+   GLASS SHINE OVERLAY
+========================= */
+
+.cpu-popup::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    border-radius: 16px;
+
+    background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0.05),
+        rgba(255,255,255,0)
+    );
+
+    pointer-events: none;
+}
+/* =========================
+   CALENDAR (MOCHA / GLASS)
+========================= */
+
+.calendar {
+    background: rgba(30, 30, 46, 0.55);
+    backdrop-filter: blur(26px);
+    -webkit-backdrop-filter: blur(26px);
+
+    border-radius: 16px;
+    border: 1px solid rgba(203,166,247,0.25);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.6),
+        0 0 20px rgba(203,166,247,0.12);
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.calendar .calendar-table,
+.calendar .calendar-table::item {
+    background: transparent;
+    color: rgba(166,173,200,0.85);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    outline: none;
+}
+
+
+/* =========================
+   HOVER + SELECT
+========================= */
+
+.calendar .calendar-table::item:hover {
+    background: rgba(203,166,247,0.12);
+    border-radius: 8px;
+}
+
+.calendar .calendar-table::item:selected {
+    color: #1e1e2e;
+    background: rgba(203,166,247,0.85);
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(203,166,247,0.35);
+}
+
+
+/* =========================
+   LABELS
+========================= */
+
+.calendar .day-label {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #89b4fa; /* Catppuccin blue */
+}
+
+.calendar .month-label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #cba6f7; /* mauve */
+}
+
+.calendar .date-label {
+    font-size: 80px;
+    font-weight: 900;
+    color: #cdd6f4;
+    margin-top: -20px;
+}
+
+.calendar .week-label,
+.calendar .holiday-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(166,173,200,0.7);
+}
+
+
+/* =========================
+   GLASS OVERLAY
+========================= */
+
+.calendar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    border-radius: 16px;
+
+    background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0.05),
+        rgba(255,255,255,0)
+    );
+
+    pointer-events: none;
+}
