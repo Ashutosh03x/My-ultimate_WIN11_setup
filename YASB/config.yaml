@@ -180,26 +180,6 @@ widgets:
       bar_type: "bars"
       framerate: 120
       hide_empty: true
-  cpu:
-        type: "yasb.cpu.CpuWidget"
-        options:
-          label: "{info[percent][total]:.0f}%"
-          progress_bar:
-            enabled: true
-            position: "left"
-            size: 16
-            thickness: 3
-            color: "#89dceb"
-            background_color: "#1e1e2e"
-            animation: true 
-          animation:
-            enabled: true
-            type: FadeInOut
-            duration: 200
-          update_interval: 2000
-          callbacks:
-            on_right: "do_nothing"
-            on_left: "do_nothing"
   wallpapers:
       type: "yasb.wallpapers.WallpapersWidget"
       options:
@@ -219,4 +199,38 @@ widgets:
             lazy_load_delay: 80
             lazy_load_fadein: 400
             image_corner_radius: 16
-            enable_cache: true            
+            enable_cache: true
+  cpu:
+    type: "yasb.cpu.CpuWidget"
+    options:
+      label: "<span>\uf4bc</span> {info[percent][total]}%"
+      label_alt: "<span>\uf437</span> {info[freq][current]} MHz"
+      update_interval: 2000
+      cpu_thresholds:
+        low: 25
+        medium: 50
+        high: 90
+      histogram_icons:
+        - "\u2581" # 0%
+        - "\u2581" # 10%
+        - "\u2582" # 20%
+        - "\u2583" # 30%
+        - "\u2584" # 40%
+        - "\u2585" # 50%
+        - "\u2586" # 60%
+        - "\u2587" # 70%
+        - "\u2588" # 80%+
+      histogram_num_columns: 8
+      callbacks:
+        on_left: "toggle_label"
+        on_right: "toggle_menu"
+      label_shadow:
+        enabled: true
+        color: "black"
+        radius: 3
+        offset: [ 1, 1 ]
+      menu:
+        enabled: true
+        show_graph: true
+        show_graph_grid: true
+        graph_history_size: 60                        
