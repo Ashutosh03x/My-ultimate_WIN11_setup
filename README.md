@@ -1,4 +1,4 @@
-✨ My Ultimate Windows 11 Setup ✨
+# __✨ My Ultimate Windows 11 Setup ✨__
 
 A collection of my personal Windows 11 customisations — focused on a clean, aesthetic, and productive workflow.
 
@@ -6,15 +6,20 @@ A collection of my personal Windows 11 customisations — focused on a clean, ae
 
 🖼️ Preview
 
-- YASB
+- __YASB__
 
 <p align="center">
 <img src="YASB/images/yasb_bar.png" width="800"/>
 </p>
 
-- Flow Launcher
+- __Flow Launcher__
 <p align="center">
 <img src="./Flow Launcher/Images/Search_box.png" width="800"/>
+</p>
+
+- __cava__
+<p align="center">
+<img src="./cava/cava_preview.png" width="800"/>
 </p>
 
 ---
@@ -25,9 +30,10 @@ A collection of my personal Windows 11 customisations — focused on a clean, ae
 |--------|------|
 |Status Bar| [YASB](YASB/README.md)|
 |App Launcher| [Flow Launcher](./Flow%20Launcher/README.md)|
-|Taskbar| [Windhawk](./windhawk/README.md)|
+|Taskbar | [Windhawk](./windhawk/README.md)|
 |Terminal| [PowerShell 7-x64](./Terminal/README.md)|
 |Code Editor| VS Code|
+|Audio Visualizer| [cava](./cava/README.md)
 
 ---
 
