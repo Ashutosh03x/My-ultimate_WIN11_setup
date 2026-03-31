@@ -27,6 +27,10 @@ Customize Windows programs with advanced mod configurations.
 <img src="./win11 notification center styler/notification_center.png" width="800"/>
 </p>
 
+ <p align="center">
+<img src="./win11 notification center styler/notification_centerV2.png" width="800"/>
+</p>
+
 ---
 
 ⚠️ Note
