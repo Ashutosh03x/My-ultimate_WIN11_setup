@@ -22,6 +22,11 @@ A collection of my personal Windows 11 customisations — focused on a clean, ae
 <img src="./cava/cava_preview.png" width="800"/>
 </p>
 
+- __File Explorer(Blur Mica)__
+<p align="center">
+<img src="./File Explorer(Blur mica)/preview.png" width="800"/>
+</p>
+
 ---
 
 ## 📦 Apps & Tools Used
@@ -37,6 +42,7 @@ A collection of my personal Windows 11 customisations — focused on a clean, ae
 | Discord            | [Vencord Browser Extension](http://vencord.dev/download/)|
 | Browser            | [Brave](https://brave.com/)|
 | Music Player       | [Yt Music💀](https://music.youtube.com/)|
+File Explorer        | [Blur Mica](./File%20Explorer(Blur%20mica)/)
 
 ---
 
