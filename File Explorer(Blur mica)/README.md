@@ -16,7 +16,7 @@ Add Blur / Acrylic / Mica effect to File Explorer (Windows 10/11).
 > [!⚠️ Note]
 
 >Some users reported bugs and crashes while using this.  
->please , don't mindrestarting this allplication when crash happens.
+>please , don't mind restarting this allplication when crash happens.
 
 >please! Turn "ON" Transparency Effects in your system settings (Windows10 or Windows11)
 
