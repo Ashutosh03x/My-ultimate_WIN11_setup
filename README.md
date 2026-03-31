@@ -24,16 +24,19 @@ A collection of my personal Windows 11 customisations — focused on a clean, ae
 
 ---
 
-📦 Apps & Tools Used
---
-|Category| Tool|
-|--------|------|
-|Status Bar| [YASB](YASB/README.md)|
-|App Launcher| [Flow Launcher](./Flow%20Launcher/README.md)|
-|Taskbar | [Windhawk](./windhawk/README.md)|
-|Terminal| [PowerShell 7-x64](./Terminal/README.md)|
-|Code Editor| VS Code|
-|Audio Visualizer| [cava](./cava/README.md)
+## 📦 Apps & Tools Used
+
+| 📚Category | ⚒️Tool |
+|------------------------|------|
+| Status Bar         | [YASB](YASB/README.md)|
+| App Launcher       | [Flow Launcher](./Flow%20Launcher/README.md)|
+| Taskbar            | [Windhawk](./windhawk/README.md)|
+| Terminal           | [PowerShell 7-x64](./Terminal/README.md)|
+| Code Editor        | VS Code|
+| Audio Visualizer   | [cava](./cava/README.md)
+| Discord            | [Vencord Browser Extension](http://vencord.dev/download/)|
+| Browser            | [Brave](https://brave.com/)|
+| Music Player       | [Yt Music💀](https://music.youtube.com/)|
 
 ---
 
