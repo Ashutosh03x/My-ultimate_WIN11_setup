@@ -13,7 +13,7 @@ Quick File Search & App Launcher for Windows.
 
 - __Apperance__
 <p align="center">
-<img src="./Images/search_index.png" width="800"/>
+<img src="./Images/search_bar.png" width="800"/>
 </p>
  
 ---
