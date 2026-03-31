@@ -47,8 +47,8 @@ Make sure to:
 
 📂 Files Included
 
-- "config.yaml" → Main configuration
-- "style.css" → Styling for the bar
+- ["config.yaml"](./config.yaml) → Main configuration
+- ["style.css"](./style.css) → Styling for the bar
 
 ---
 
