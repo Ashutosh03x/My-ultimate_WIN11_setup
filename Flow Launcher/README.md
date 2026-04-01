@@ -8,7 +8,7 @@ Quick File Search & App Launcher for Windows.
 
 - __Theme__
 <p align="center">
-<img src="./Images/search_index.png" width="800"/>
+<img src="./Images/Search_box.png" width="800"/>
 </p>
 
 - __Apperance__
