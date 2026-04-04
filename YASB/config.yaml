@@ -41,12 +41,12 @@ bars:
     widgets:
       left:
         - "custom_button"
+        - "pomodoro"
         - "wallpapers"
         - "active_window"
 
       center:
         - "clock"
-        
       right:
         - "cava"
         - "volume"
@@ -171,22 +171,27 @@ widgets:
       min_bar_height: 0
       gradient: 1
       foreground: "#89b4fa"
-      gradient_color_1: '#74c7ec'
+      gradient_color_1: '#89dceb'
       gradient_color_2: '#89b4fa'
       gradient_color_3: '#cba6f7'
       bars_number: 12
       bar_spacing: 2
       bar_width: 3
       bar_type: "bars"
-      framerate: 120
+      framerate: 65
       hide_empty: true
+      noise_reduction: 32
+      lower_cutoff_freq: 30
+      higher_cutoff_freq: 16000
+      output_bit_format: "8bit"
+      sensitivity: 95
   wallpapers:
       type: "yasb.wallpapers.WallpapersWidget"
       options:
         label: "<span>\udb83\ude09</span>"
-        image_path:  #use your own path of the wallpapers
-        change_automatically: False # Automatically change wallpaper
-        update_interval: 120 # If change_automatically is true, update interval in seconds
+        image_path: "C:\\Users\\Aashu\\Documents\\WALLPAPERS-2"
+        change_automatically: True # Automatically change wallpaper
+        update_interval: 300 # If change_automatically is true, update interval in seconds
         gallery:
             enabled: true
             blur: true
@@ -233,4 +238,47 @@ widgets:
         enabled: true
         show_graph: true
         show_graph_grid: true
-        graph_history_size: 60                        
+        graph_history_size: 60
+  pomodoro:
+    type: "yasb.pomodoro.PomodoroWidget"
+    options:
+      label: "<span>{icon}</span> {remaining}"
+      label_alt: "<span>{icon}</span> {session}/{total_sessions} - {status}"
+      work_duration: 120
+      break_duration: 10
+      long_break_duration: 30
+      long_break_interval: 2
+      auto_start_breaks: true
+      auto_start_work: true
+      sound_notification: true
+      show_notification: true
+      hide_on_break: false
+      session_target: 3
+      icons:
+        work: "\uf252"
+        break: "\uf253"
+        paused: "\uf254"
+      menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "right"
+        direction: "down"
+        offset_top: 6
+        offset_left: 0
+        circle_background_color: "#09ffffff"
+        circle_work_progress_color: "#88c0d0"
+        circle_break_progress_color: "#a3be8c"
+        circle_thickness: 8
+        circle_size: 160
+      callbacks:
+        on_left: "toggle_menu"
+        on_middle: "reset_timer"
+        on_right: "toggle_label"
+      label_shadow:
+        enabled: true
+        color: "black"
+        radius: 3
+        offset: [ 1, 1 ]        
+                               
