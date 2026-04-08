@@ -44,7 +44,8 @@ A collection of my personal Windows 11 customisations — focused on a clean, ae
 | Music Player               | [Yt Music💀](https://music.youtube.com/)|
 File Explorer                | [Blur Mica](./File%20Explorer(Blur%20mica)/)
 | My personal fav. wallpapers| [Wallpapers](./Wallpapers/)
-
+| system Fetch               | [FastFetch](./Fastfetch)
+| Shell Prompt               | [oh my posh]()
 ---
 
 🎨 Theme
