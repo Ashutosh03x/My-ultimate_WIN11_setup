@@ -7,7 +7,7 @@ A highly customizable Windows status bar built with Python.
 ---
 - __Bar__
 <p align="center">
-<img src="images/yasb_bar.png" width="800"/>
+<img src="images/yasb_bar_v2.png" width="800"/>
 </p>
 
 - __wallpapers widget__
@@ -28,8 +28,11 @@ A highly customizable Windows status bar built with Python.
 - __CPU Widget-POPUP__
 <p align="center">
 <img src="images/cpu_widget_popup.png" width="800"/>
-</p>
 
+- __volume Widget-POPUP__
+
+<img src="images/volume_widget_popup.png" width="800"/>
+</p>
 
 ---
 
