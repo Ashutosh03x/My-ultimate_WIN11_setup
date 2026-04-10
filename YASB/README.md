@@ -1,4 +1,4 @@
-##  __ 🗞️ YASB Configuration__
+##  🗞️ YASB Configuration
 
 #### *A highly customizable Windows status bar built with Python.*
 
