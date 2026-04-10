@@ -145,22 +145,7 @@
 .icon {
 	font-size: 16px;
 }
-.volume-widget .icon {
-	color: #89b4fa;
-	margin: 1px 2px 0 0;
-} 
-.start-menu .icon {
-    font-size: 18px;
-	color: #89b4fa
-}
-.clock-widget .icon {
-	color: #cba6f7;
-    font-size: 14px;
-}
-.wallpapers-widget .icon {
-    color: #89dceb;
-    font-size: 22px;
-}
+
 .battery-widget {
     padding: 0 1px;
 }
@@ -809,4 +794,92 @@
     );
 
     pointer-events: none;
+}/* =========================
+   VOLUME WIDGET (BAR)
+========================= */
+
+.volume-widget .icon {
+    color: #89b4fa;
+    margin: 0 3px 0 0;
+    transition: all 0.2s ease;
 }
+
+.volume-widget .icon:hover {
+    color: #cba6f7;
+}
+
+
+/* =========================
+   AUDIO MENU (GLASS)
+========================= */
+
+.audio-menu {
+    background: rgba(30, 30, 46, 0.55);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+
+    min-width: 300px;
+    border-radius: 14px;
+
+    border: 1px solid rgba(203,166,247,0.25);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.6),
+        0 0 20px rgba(203,166,247,0.12);
+
+    padding: 8px;
+}
+
+/* =========================
+   DEVICE LIST
+========================= */
+
+.audio-menu .audio-container .device {
+    background: transparent;
+    border: 1px solid transparent;
+
+    padding: 6px 10px;
+    margin: 3px 0;
+
+    font-size: 12px;
+    font-family: "JetBrainsMono NFP";
+
+    border-radius: 10px;
+
+    color: #cdd6f4;
+
+    transition: all 0.18s ease;
+}
+
+.audio-menu .audio-container .device:hover {
+    background: rgba(203,166,247,0.10);
+    border: 1px solid rgba(203,166,247,0.25);
+}
+
+.audio-menu .audio-container .device.selected {
+    background: rgba(203,166,247,0.18);
+    border: 1px solid rgba(203,166,247,0.35);
+
+    color: #ffffff;
+}
+/* =========================
+   GLASS SHINE
+========================= */
+
+.audio-menu::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0.05),
+        rgba(255,255,255,0)
+    );
+
+    pointer-events: none;
+}
+
+
