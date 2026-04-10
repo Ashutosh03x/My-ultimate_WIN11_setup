@@ -93,20 +93,6 @@ widgets:
         sleep: ["\u23fe", "NiNi"]
         cancel: ["", "Nah!Im Good"]
 
-  volume:
-    type: "yasb.volume.VolumeWidget"
-    options:
-      label: "<span>{icon}</span> {level}"
-      label_alt: "{volume}"
-      volume_icons:
-        - "\ueee8"
-        - "\uf026"
-        - "\uf027"
-        - "\uf027"
-        - "\uf028"
-      callbacks:
-        on_right: "exec cmd.exe /c start ms-settings:sound"
-
   custom_button:
     type: "yasb.custom.CustomWidget"
     options:
@@ -244,16 +230,16 @@ widgets:
     options:
       label: "<span>{icon}</span> {remaining}"
       label_alt: "<span>{icon}</span> {session}/{total_sessions} - {status}"
-      work_duration: 120
+      work_duration: 110
       break_duration: 10
-      long_break_duration: 30
+      long_break_duration: 20
       long_break_interval: 2
       auto_start_breaks: true
-      auto_start_work: true
+      auto_start_work: false
       sound_notification: true
       show_notification: true
       hide_on_break: false
-      session_target: 3
+      session_target: 4
       icons:
         work: "\uf252"
         break: "\uf253"
@@ -267,18 +253,48 @@ widgets:
         direction: "down"
         offset_top: 6
         offset_left: 0
-        circle_background_color: "#09ffffff"
-        circle_work_progress_color: "#88c0d0"
-        circle_break_progress_color: "#a3be8c"
-        circle_thickness: 8
-        circle_size: 160
+        circle_background_color: "#1e1e2e"
+        circle_work_progress_color: "#a6e3a1"
+        circle_break_progress_color: "#89b4a"
+        circle_thickness: 10
+        circle_size: 150
       callbacks:
         on_left: "toggle_menu"
         on_middle: "reset_timer"
         on_right: "toggle_label"
       label_shadow:
         enabled: true
+        color: "#000000"
+        radius: 3
+        offset: [ 1, 1 ]  
+
+  volume:
+    type: "yasb.volume.VolumeWidget"
+    options:
+      label: "<span>{icon}</span> {level}"
+      label_alt: "{volume}"
+      volume_icons:
+        - "\ueee8"  # Icon for muted
+        - "\uf026"  # Icon for 0-10% volume
+        - "\uf027"  # Icon for 11-30% volume
+        - "\uf027"  # Icon for 31-60% volume
+        - "\uf028"  # Icon for 61-100% volume
+      audio_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "right"
+        direction: "down"
+      callbacks:
+        on_left: "toggle_volume_menu"
+        on_right: "toggle_mute"
+      label_shadow:
+        enabled: true
         color: "black"
         radius: 3
-        offset: [ 1, 1 ]        
+        offset: [ 1, 1 ]
+
+
                                
+  
