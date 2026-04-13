@@ -6,21 +6,21 @@ Collection of aesthetic wallpapers (mostly Catppuccin Mocha themed).
 ---
 
 <p align="center">
-  <img src="koi.jpg" width="30%"/>
-  <img src="paint.jpg" width="30%"/>
-  <img src="crane.png" width="30%"/>
+  <img src="./All/koi.jpg" width="30%"/>
+  <img src="./All/paint.jpg" width="30%"/>
+  <img src="./All/crane.png" width="30%"/>
 </p>
 
 <p align="center">
-  <img src="koishi.jpg" width="30%"/>
-  <img src="tower.png" width="30%"/>
-  <img src="samurai.jpg" width="30%"/>
+  <img src="./All/koishi.jpg" width="30%"/>
+  <img src="./All/tower.png" width="30%"/>
+  <img src="./All/samurai.jpg" width="30%"/>
 </p>
 
 <p align="center">
-  <img src="TN7.png" width="30%"/>
-  <img src="waterfall.png" width="30%"/>
-  <img src="minimalist-black-hole.png" width="30%"/>
+  <img src="./All/TN7.png" width="30%"/>
+  <img src="./All/waterfall.png" width="30%"/>
+  <img src="./All/minimalist-black-hole.png" width="30%"/>
 </p>
 
 ---
