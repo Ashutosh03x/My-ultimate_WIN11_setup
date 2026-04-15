@@ -4,7 +4,7 @@ A collection of my personal Windows 11 customisations — focused on a clean, ae
 
 ---
 
-🖼️ Preview
+### 🖼️ Preview
 
 - __YASB__
 
@@ -53,13 +53,14 @@ File Explorer                | [Blur Mica](./File%20Explorer(Blur%20mica)/)
 - Colorscheme: [Catppuccin (Mocha)](https://catppuccin.com/)
 - Font: [JetBrains Mono Nerd Font](https://www.jetbrains.com/lp/mono/)
 
----
+> #### chect out [__*This Repo💙*__](https://github.com/Ashutosh03x/WIN11_Naruto-Themed) For NARUTO THEMED customizations
 
-⚙️ Setup Guide
+
+## ⚙️ Setup Guide
 
 Each folder in this repository contains configuration files for a specific tool.
 
-»General Steps:
+#### General Steps:
 
 1. Install the required application
 2. Open its config/settings
@@ -70,7 +71,7 @@ Each folder in this repository contains configuration files for a specific tool.
 ---
 ---
 
-⚠️ Notes
+## ⚠️ Notes
 
 - Some configs may require editing paths (like your username or file locations)
 - Certain features may not work without API keys or additional setup
@@ -78,25 +79,25 @@ Each folder in this repository contains configuration files for a specific tool.
 
 ---
 
-🚧 Status
+#### 🚧 Status
 
 This project is still in progress. I will keep improving and adding more configs over time.
 
 ---
 
-🎯 Goal
+#### 🎯 Goal
 
 To build a minimal, aesthetic, and highly productive Windows 11 environment.
 
 ---
 
-⭐ Credits
+#### ⭐ Credits
 
 Inspired by the Windows customization community.
 
 ---
 
-📌 Extras (Coming Soon)
+#### 📌 Extras (Coming Soon)
 
 - Screenshots
 - More tools and tweaks
