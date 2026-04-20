@@ -39,7 +39,7 @@
 	font-family: "JetBrainsMono NFP";
 }
 .power-menu-widget .label {
-	color: #a0c1eb;
+	color: #6ce8f0;
 	font-size: 24px;
 }
 .power-menu-popup{
@@ -881,5 +881,31 @@
 
     pointer-events: none;
 }
+/*=====================
+CONTEXT MENU
+=====================*/
+.context-menu {
+    background-color: rgba(30, 30, 46, 0.55);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(203, 166, 247, 0.25);
+    border-radius: 10px;
+    padding: 4px 0;
+    font-size: 12px;
+    color: #cdd6f4;
+    font-family: "JetBrainsMono NFP";
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5), 0 0 16px rgba(203,166,247,0.10);
+}
+.context-menu::item {
+    background-color: transparent;
+    padding: 7px 14px;
+    margin: 2px 5px;
+    border-radius: 6px;
+    min-width: 120px;
+    color: #cdd6f4;
+}
+.context-menu::item:selected { background-color: rgba(203,166,247,0.15); }
+.context-menu::item:pressed  { background-color: rgba(203,166,247,0.28); }
+.context-menu::item:disabled { color: rgba(166,173,200,0.35); }
+.context-menu::separator     { height: 1px; background-color: rgba(203,166,247,0.15); margin: 3px 8px; }
 
 
